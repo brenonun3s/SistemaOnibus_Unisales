@@ -1,32 +1,62 @@
-import java.util.Scanner;
-
 
 public class Onibus {
   
     private int numero_Onibus;
-    private int quantidadePassageiros;
-    private int assentos;
+    private int[] quantidadePassageiros = new int[40];
+    private int[] assentos = new int[40];
+
+ /*Classe Onibus
+public class Onibus {
+    private String placa;
+
+    public Onibus(String placa) {
+        this.placa = placa;
+    }
+
+    public boolean validarPlaca() {
+        return placa.length() <= 4;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+}
+ /* */
 
 
-    public int getNumero_Onibus() {
-        return numero_Onibus;
+
+
+/*public class Onibus {
+    private String placa;
+
+    Esse codigo aqui deve ser usado na classe main ****** ESTOU CONSTRUINDO ******
+
+    public Onibus(String placa) {
+        this.placa = placa;
     }
-    public void setNumero_Onibus(int numero_Onibus) {
-        this.numero_Onibus = numero_Onibus;
+
+    public boolean validarPlaca() {
+        return placa.length() <= 4;
     }
-    public int getQuantidadePassageiros() {
-        return quantidadePassageiros;
+
+    public String getPlaca() {
+        return placa;
     }
-    public void setQuantidadePassageiros(int quantidadePassageiros) {
-        this.quantidadePassageiros = quantidadePassageiros;
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
-    public int getAssentos() {
-        return assentos;
-    }
-    public void setAssentos(int assentos) {
-        this.assentos = assentos;  
-    }
-    public void exibirInformacoes() {
-        System.out.println("Número do Ônibus é:" +getNumero_Onibus()+"Quantidade de Passageiros:"+getQuantidadePassageiros()+"\nQuantidade de Assentos desse Ônibus é:"+getAssentos());
-    }
+
+}
+    /* */
+
+
+
+
+
+    
 }
