@@ -2,7 +2,7 @@
 
 Olá Caros!
 
-Esse repositório foi criado á fim da elaboração de projeto que consiste em um sistema de gerenciamento de vendas de passagens e viagens da matéria Abstração em Estruturas de Dados, matéria disciplinada pelo Prof. Vito Rodrigues Franzosi referente aos Cursos de T.I da Unisales - Centro Universitário Salesiano.
+Esse repositório foi criado á fim da elaboração de projeto que consiste em um sistema de gerenciamento de vendas de passagens para viagens da matéria Abstração em Estruturas de Dados, matéria disciplinada pelo Prof. Vito Rodrigues Franzosi referente aos Cursos de T.I da Unisales - Centro Universitário Salesiano.
 
 Foi utilizado as seguintes ferramentas para elaboração do mesmo:
 
