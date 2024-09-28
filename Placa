@@ -1,0 +1,27 @@
+
+
+public class Placa {
+
+    public static void main(String[] args) throws Exception {
+        Onibus linha515 = new Onibus();
+        Onibus linha591 = new Onibus();
+        linha515.setPlacaOnibus("ABC-1234\n");
+        linha591.setPlacaOnibus("DEF-5678\n");
+        
+        System.out.println("Placa do Onibus:\n" + linha515.getPlacaOnibus() + linha591. getPlacaOnibus());
+    }
+}
+
+class Onibus {
+    private String placaOnibus;
+
+    public void setPlacaOnibus(String placa) {
+        this.placaOnibus = placa;
+    }
+
+    public String getPlacaOnibus() {
+        return this.placaOnibus;
+    }
+
+}
+   
