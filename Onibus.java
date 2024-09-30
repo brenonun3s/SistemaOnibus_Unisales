@@ -58,6 +58,7 @@ public class Onibus {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Olá, digite o número do assento (1-40): ");
         int assentoEscolhido = scanner.nextInt();
+        scanner.close();
 
         if (assentoEscolhido < 1 || assentoEscolhido > 40) {
             System.out.println("Número Inválido! Por favor, escolha um número de 1 a 40");
