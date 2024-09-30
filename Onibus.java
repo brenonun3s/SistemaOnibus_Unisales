@@ -80,33 +80,31 @@ public class Onibus {
 
     }
 
-
     public void adicionarPassageiro(String nome) {
-            passageiros.add(nome);
-            System.out.println("Passageiro " + nome + " adicionado com sucesso!");
-        }
+        passageiros.add(nome);
+        System.out.println("Passageiro " + nome + " adicionado com sucesso!");
+    }
 
     public void removerPassageiro(String nome) {
-            if (passageiros.remove(nome)) {
-                System.out.println("Passageiro " + nome + " removido com sucesso!");
-            } else {
-                System.out.println("Passageiro " + nome + " não encontrado.");
-            }
-        }
-
-    public void listarPassageiros() {
-            System.out.println("Lista de passageiros:");
-            for (String passageiro : passageiros) {
-                System.out.println(passageiro);
-            }
-        }
-
-    public List<String> getPassageiros() {
-            return passageiros;
-        }
-
-    public void setPassageiros(List<String> passageiros) {
-            this.passageiros = passageiros;
+        if (passageiros.remove(nome)) {
+            System.out.println("Passageiro " + nome + " removido com sucesso!");
+        } else {
+            System.out.println("Passageiro " + nome + " não encontrado.");
         }
     }
 
+    public void listarPassageiros() {
+        System.out.println("Lista de passageiros:");
+        for (String passageiro : passageiros) {
+            System.out.println(passageiro);
+        }
+    }
+
+    public List<String> getPassageiros() {
+        return passageiros;
+    }
+
+    public void setPassageiros(List<String> passageiros) {
+        this.passageiros = passageiros;
+    }
+}
