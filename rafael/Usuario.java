@@ -47,6 +47,9 @@ abstract class Usuario {
     }
 
     public void setNome(String nome) {
+        if (nome == null || nome.trim().isEmpty()) {
+            throw new IllegalArgumentException("Nome não pode ser vazio ou nulo.");
+        }
         this.nome = nome;
     }
 

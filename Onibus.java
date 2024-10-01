@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Onibus {
 
-    private int numeroOnibus;
+    private String numeroOnibus;
     private List<Integer> quantidadePassageiros = new ArrayList<>(40);
     private List<Boolean> assentos = new ArrayList<>(40);
     private String placaOnibus;
@@ -18,12 +18,19 @@ public class Onibus {
         }
     }
 
-    public int getNumeroOnibus() {
+    public String getNumeroOnibus() {
+        if (numeroOnibus.length() != 4) {
+            System.out.println("Número Incorreto");
+        }
         return numeroOnibus;
     }
 
-    public void setNumeroOnibus(int numeroOnibus) {
+    public String setNumeroOnibus(String numeroOnibus) {
         this.numeroOnibus = numeroOnibus;
+        if (numeroOnibus.length() != 4) {
+            System.out.println("Número Incorreto");
+        }
+        return numeroOnibus;
     }
 
     public List<Integer> getQuantidadePassageiros() {

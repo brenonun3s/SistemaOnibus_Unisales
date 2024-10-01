@@ -7,12 +7,14 @@ public class Main {
         laranjeiras.setPlacaOnibus("ABC-1234");
         laranjeiras.getPlacaOnibus();
 
-        laranjeiras.escolherAssento();
-        laranjeiras.exibirInformacoes();
-        laranjeiras.adicionarPassageiro("Breno");
-        laranjeiras.listarPassageiros();
-        laranjeiras.removerPassageiro("Breno");
-        laranjeiras.listarPassageiros();
+        //laranjeiras.escolherAssento();
+        //laranjeiras.exibirInformacoes();
+        //laranjeiras.adicionarPassageiro("Breno");
+        //laranjeiras.listarPassageiros();
+        //laranjeiras.removerPassageiro("Breno");
+        //laranjeiras.listarPassageiros();
+        laranjeiras.setNumeroOnibus("1234");
+        System.out.println(laranjeiras.getNumeroOnibus());
 
     }
 }

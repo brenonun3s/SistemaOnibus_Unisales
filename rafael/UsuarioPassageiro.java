@@ -17,8 +17,7 @@ class UsuarioPassageiro extends Usuario {
     }
 
     public void fazerReservaPassageiro(String viagem, int assento) {
-        System.out.println(
-                "Usuário " + getNome() + " fez reserva com sucesso! Viagem para: " + viagem + ", Assento: " + assento);
+        System.out.println("Usuário " + getNome() + " fez reserva com sucesso! Viagem para: " + viagem + ", Assento: " + assento);
     }
 
     public void fazerCheckInPassageiro() {
@@ -28,7 +27,7 @@ class UsuarioPassageiro extends Usuario {
     }
 
     public void exibirInformacoesPassageiro() {
-        System.out.println("Passageiro: " + getNome() + ", Email: " + getEmail());
+        System.out.println("Passageiro: " + "Nome: " + getNome() + " CPF: " + getCpf() +" e-mail: " +getEmail() +" id: : " +getId() + " idade: " + getIdade() );
     }
 
     public void cancelarPassagemPassageiro(String viagem) {
