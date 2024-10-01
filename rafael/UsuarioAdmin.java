@@ -9,8 +9,8 @@ class UsuarioAdmin extends Usuario {
 
     // Método que acessa as funcionalidades administrativas
     public void acessarFuncionalidade(UsuarioPassageiro passageiro) {
-        alterarAssento(25, passageiro); // Altera o assento do passageiro
-        confirmarPassagem(passageiro); // Confirma a passagem do passageiro
+        alterarAssento(25, passageiro); // Altera o assento do passageiro   - - - OKAYYY
+        confirmarPassagem(passageiro); // Confirma a passagem do passageiro  - - - OKAY
         cancelarPassagem(passageiro); // Cancela a passagem do passageiro
         fazerReservaAdmin("Acapulco", 20, passageiro); // Faz uma reserva para o passageiro
     }
@@ -29,14 +29,12 @@ class UsuarioAdmin extends Usuario {
 
     // Cancela a passagem do passageiro especificado
     public void cancelarPassagem(UsuarioPassageiro passageiro) {
-        System.out.println("A passagem do passageiro " + passageiro.getNome() + " foi cancelada pelo administrador "
-                + getNome() + ".");
+        System.out.println("A passagem do passageiro " + passageiro.getNome() + " foi cancelada pelo administrador " + getNome() + ".");
     }
 
     // Confirma a passagem para um passageiro específico
     public void confirmarPassagem(UsuarioPassageiro passageiro) {
-        System.out.println("A passagem do passageiro " + passageiro.getNome() + " foi confirmada pelo administrador "
-                + getNome() + ".");
+        System.out.println("A passagem do passageiro " + passageiro.getNome() + " foi confirmada pelo administrador "+ getNome() + ".");
     }
 
     // Altera o assento do passageiro para o valor especificado

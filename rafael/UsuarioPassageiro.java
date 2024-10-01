@@ -9,10 +9,10 @@ class UsuarioPassageiro extends Usuario {
 
     public void acessarFuncionalidade(UsuarioPassageiro passageiro) {
         exibirInformacoesPassageiro();
-        fazerCheckInPassageiro(); // OK
-        fazerReservaPassageiro("Acapulco", 1); // OK
-        confirmarPassagemPassageiro(); // OK
-        cancelarPassagemPassageiro("Acapulco"); // OK
+        fazerCheckInPassageiro();
+        fazerReservaPassageiro("Acapulco", 1);
+        confirmarPassagemPassageiro();
+        cancelarPassagemPassageiro("Acapulco");
         alterarAssentoPassageiro(25);
     }
 
