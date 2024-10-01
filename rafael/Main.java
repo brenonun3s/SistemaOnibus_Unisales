@@ -9,7 +9,7 @@ public class Main {
                 "987.654.321-00", "ana@passageiro.com");
 
                 admin.alterarAssento(2, passageiro);
-                passageiro.alterarAssentoPassageiro(5);
+                passageiro.alterarAssentoPassageiro(6);
 
         }
 }
