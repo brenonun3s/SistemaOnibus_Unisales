@@ -12,7 +12,8 @@ class UsuarioAdmin extends Usuario {
         alterarAssento(25, passageiro); // Altera o assento do passageiro   - - - OKAYYY
         confirmarPassagem(passageiro); // Confirma a passagem do passageiro  - - - OKAY
         cancelarPassagem(passageiro); // Cancela a passagem do passageiro
-        fazerReservaAdmin("Acapulco", 20, passageiro); // Faz uma reserva para o passageiro
+        fazerReserva("Acapulco", 20, passageiro); // Faz uma reserva para o passageiro
+        excluirUsuario(passageiro);
     }
 
     // Realiza o check-in para o passageiro especificado
@@ -22,7 +23,7 @@ class UsuarioAdmin extends Usuario {
     }
 
     // Faz a reserva de uma viagem para um passageiro específico
-    public void fazerReservaAdmin(String viagem, int assento, UsuarioPassageiro passageiro) {
+    public void fazerReserva(String viagem, int assento, UsuarioPassageiro passageiro) {
         System.out.println("Reserva feita pelo administrador " + getNome() + " para o passageiro "
                 + passageiro.getNome() + " na viagem " + viagem + ", Assento: " + assento);
     }
@@ -45,7 +46,6 @@ class UsuarioAdmin extends Usuario {
 
     // Exclui um usuário passageiro
     public void excluirUsuario(UsuarioPassageiro passageiro) {
-        System.out.println(
-                "O passageiro " + passageiro.getNome() + " foi excluído pelo administrador " + getNome() + ".");
+        System.out.println("O passageiro " + passageiro.getNome() + " foi excluído pelo administrador " + getNome() + ".");
     }
 }

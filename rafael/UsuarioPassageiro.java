@@ -11,8 +11,8 @@ class UsuarioPassageiro extends Usuario {
         exibirInformacoesPassageiro();
         fazerCheckInPassageiro();
         fazerReservaPassageiro("Acapulco", 1);
-        confirmarPassagemPassageiro();
-        cancelarPassagemPassageiro("Acapulco");
+        confirmarPassagemPassageiro(); // OK
+        cancelarPassagemPassageiro("Acapulco"); // OK
         alterarAssentoPassageiro(25);
     }
 
