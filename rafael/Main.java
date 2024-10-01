@@ -8,5 +8,8 @@ public class Main {
                 UsuarioPassageiro passageiro = new UsuarioPassageiro(2, "Jamal", 25,
                 "987.654.321-00", "ana@passageiro.com");
 
+                admin.alterarAssento(2, passageiro);
+                passageiro.alterarAssentoPassageiro(5);
+
         }
 }
