@@ -71,3 +71,4 @@ abstract class Usuario {
         this.tipoUsuario = tipoUsuario;
     }
 }
+

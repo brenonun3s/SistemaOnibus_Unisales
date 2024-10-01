@@ -49,3 +49,4 @@ class UsuarioPassageiro extends Usuario {
 
     }
 }
+

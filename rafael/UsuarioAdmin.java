@@ -56,3 +56,4 @@ class UsuarioAdmin extends Usuario {
         System.out.println("Passageiro: " + "Nome: " + getNome() + " CPF: " + getCpf() +" e-mail: " +getEmail() +" id: : " +getId() + " idade: " + getIdade() );
     }
 }
+
