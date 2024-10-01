@@ -1,18 +1,13 @@
-import java.util.Date;
-
-
 public class Viagens {
 
     private String numeroOnibus;
     private String origem;
     private String destino;
-    private Date dataSaida;
-    private Date dataChegada;
+    private String dataSaida;
+    private String dataChegada;
     private int numeroAssento;
 
-    
-
-    public Viagens(String numeroOnibus, String origem, String destino, Date dataSaida, Date dataChegada, int numeroAssento) {
+    public Viagens(String numeroOnibus, String origem, String destino, String dataSaida, String dataChegada, int numeroAssento) {
         this.numeroOnibus = numeroOnibus;
         this.origem = origem;
         this.destino = destino;
@@ -22,18 +17,14 @@ public class Viagens {
     }
 
     public String getNumeroOnibus() {
-        if (numeroOnibus.length() != 4) {
-            System.out.println("Número Incorreto");
-        }
         return numeroOnibus;
     }
 
-    public String setNumeroOnibus(String numeroOnibus) {
-        this.numeroOnibus = numeroOnibus;
+    public void setNumeroOnibus(String numeroOnibus) {
         if (numeroOnibus.length() != 4) {
-            System.out.println("Número Incorreto");
+            throw new IllegalArgumentException("Número Incorreto");
         }
-        return numeroOnibus;
+        this.numeroOnibus = numeroOnibus;
     }
 
     public void exibirInformacoes() {
@@ -41,9 +32,8 @@ public class Viagens {
         System.out.println("Placa: " + getNumeroOnibus());
         System.out.println("Seu assento é: " + getNumeroAssento());
         System.out.println("Você sairá de: " + getOrigem() + " e seu destino é: " + getDestino());
-        System.out.println("Seu horário de saída é: " + getdataSaida() + "\nE seu horário de chegada estimado é: " + getdataChegada());
+        System.out.println("Seu horário de saída é: " + getDataSaida() + "\nE seu horário de chegada estimado é: " + getDataChegada());
     }
-    
 
     public String getOrigem() {
         return origem;
@@ -61,19 +51,19 @@ public class Viagens {
         this.destino = destino;
     }
 
-    public Date getdataSaida() {
+    public String getDataSaida() {
         return dataSaida;
     }
 
-    public void setdataSaida(Date dataSaida) {
+    public void setDataSaida(String dataSaida) {
         this.dataSaida = dataSaida;
     }
 
-    public Date getdataChegada() {
+    public String getDataChegada() {
         return dataChegada;
     }
 
-    public void setdataChegada(Date dataChegada) {
+    public void setDataChegada(String dataChegada) {
         this.dataChegada = dataChegada;
     }
 
