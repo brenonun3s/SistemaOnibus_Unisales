@@ -1,22 +1,18 @@
 package rafael;
-import rafael.UsuarioAdmin;
-import rafael.UsuarioPassageiro;
-import rafael.Usuario.TipoUsuario;
 
 public class Main {
         public static void main(String[] args) {
                 UsuarioAdmin admin = new UsuarioAdmin(1, "Rafael", 24, "12345678910", "rafael@teste.com");
 
-                UsuarioPassageiro passageiro = new UsuarioPassageiro(2, "Ana Souza", 25, "987.654.321-00","ana@passageiro.com");
+                UsuarioPassageiro passageiro = new UsuarioPassageiro(2, "Ana Souza", 25, "987.654.321-00", "ana@passageiro.com");
 
-                passageiro.alterarAssento();
-                passageiro.cancelarPassagem();
+                UsuarioPassageiro passageiro2 = new UsuarioPassageiro(3, "Drow", 70, "12345678910", "rafa@gmail.com");
 
+                admin.alterarAssento(1, passageiro);
+                admin.alterarAssento(2, passageiro2);
 
-
-
-                admin.confirmarPassagem(passageiro);
-                admin.cancelarPassagem(passageiro);
+                passageiro.alterarAssentoPassageiro(2);
+                passageiro2.alterarAssentoPassageiro(3);
 
         }
 }

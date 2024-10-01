@@ -11,7 +11,7 @@ abstract class Usuario {
     public enum TipoUsuario {
         passageiro,
         administrador;
-    }    
+    }
 
     public Usuario(int id, String nome, int idade, String cpf, String email, TipoUsuario tipoUsuario) {
         this.id = id;
@@ -63,9 +63,8 @@ abstract class Usuario {
         }
         this.email = email;
     }
-    
 
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
-    this.tipoUsuario = tipoUsuario;
+        this.tipoUsuario = tipoUsuario;
     }
 }
