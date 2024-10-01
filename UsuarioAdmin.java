@@ -7,14 +7,14 @@ class UsuarioAdmin extends Usuario {
 
     // Método que acessa as funcionalidades administrativas
     public void acessarFuncionalidade(UsuarioPassageiro passageiro) {
-        alterarAssento(25, passageiro); // Altera o assento do passageiro   - - - OKAYYY
-        confirmarPassagem(passageiro); // Confirma a passagem do passageiro  - - - OKAY
+        alterarAssento(25, passageiro); // Altera o assento do passageiro
+        confirmarPassagem(passageiro); // Confirma a passagem do passageiro
         cancelarPassagem(passageiro); // Cancela a passagem do passageiro
         fazerReserva("Acapulco", 20, passageiro); // Faz uma reserva para o passageiro
-        excluirUsuario(passageiro);
-        fazerCheckIn(passageiro);
-        fazerReserva("Acapulco", 20, passageiro);
-        exibirInformacoesPassageiro();
+        excluirUsuario(passageiro); // Exclui o usuário
+        fazerCheckIn(passageiro); // Faz o Check-in
+        fazerReserva("Acapulco", 20, passageiro); //Faz a reserva
+        exibirInformacoesPassageiro(); //exibe informações sobre o passageiro
     }
 
     // Realiza o check-in para o passageiro especificado
