@@ -1,5 +1,3 @@
-package rafael;
-
 class UsuarioAdmin extends Usuario {
 
     // Construtor para inicializar o usuário administrador
