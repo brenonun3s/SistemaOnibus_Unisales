@@ -15,8 +15,6 @@ class UsuarioAdmin extends Usuario {
         fazerCheckIn(passageiro);
         fazerReserva("Acapulco", 20, passageiro);
         exibirInformacoesPassageiro();
-
-        
     }
 
     // Realiza o check-in para o passageiro especificado
@@ -26,8 +24,7 @@ class UsuarioAdmin extends Usuario {
 
     // Faz a reserva de uma viagem para um passageiro específico
     public void fazerReserva(String viagem, int assento, UsuarioPassageiro passageiro) {
-        System.out.println("Reserva feita pelo administrador " + getNome() + " para o passageiro "
-                + passageiro.getNome() + " na viagem " + viagem + ", Assento: " + assento);
+        System.out.println("Reserva feita pelo administrador " + getNome() + " para o passageiro "+ passageiro.getNome() + " na viagem " + viagem + ", Assento: " + assento);
     }
 
     // Cancela a passagem do passageiro especificado
@@ -42,8 +39,7 @@ class UsuarioAdmin extends Usuario {
 
     // Altera o assento do passageiro para o valor especificado
     public void alterarAssento(int novoAssento, UsuarioPassageiro passageiro) {
-        System.out.println("Assento do passageiro " + passageiro.getNome() + " alterado para assento: " + novoAssento
-                + " - troca efetuada pelo administrador " + getNome() + ".");
+        System.out.println("Assento do passageiro " + passageiro.getNome() + " alterado para assento: " + novoAssento + " - troca efetuada pelo administrador " + getNome() + ".");
     }
 
     // Exclui um usuário passageiro

@@ -26,8 +26,7 @@ class UsuarioPassageiro extends Usuario {
     }
 
     public void exibirInformacoesPassageiro() {
-        System.out.println("Passageiro: " + "Nome: " + getNome() + " CPF: " + getCpf() + " e-mail: " + getEmail()
-                + " id: : " + getId() + " idade: " + getIdade());
+        System.out.println("Passageiro: " + "Nome: " + getNome() + " CPF: " + getCpf() + " e-mail: " + getEmail() + " id: : " + getId() + " idade: " + getIdade());
     }
 
     public void cancelarPassagemPassageiro(String viagem) {
@@ -38,8 +37,7 @@ class UsuarioPassageiro extends Usuario {
     }
 
     public void alterarAssentoPassageiro(int novoAssento) {
-        System.out.println("Assento do passageiro " + getNome() + " alterado para o novo assento: " + novoAssento
-                + " - troca realizada pelo passageiro!");
+        System.out.println("Assento do passageiro " + getNome() + " alterado para o novo assento: " + novoAssento + " - troca realizada pelo passageiro!");
     }
 
     public void confirmarPassagemPassageiro() {
