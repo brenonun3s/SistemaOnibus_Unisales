@@ -5,8 +5,8 @@ class UsuarioPassageiro extends Usuario {
 
     }
 
-    public void acessarFuncionalidade(UsuarioPassageiro passageiro) {
-        exibirInformacoesPassageiro();
+    public void acessarFuncionalidade(UsuarioPassageiro passageiro, int id) {
+        exibirInformacoesPassageiro(id);
         fazerCheckInPassageiro();
         fazerReservaPassageiro("Acapulco", 1);
         confirmarPassagemPassageiro(); // OK
@@ -25,7 +25,7 @@ class UsuarioPassageiro extends Usuario {
         // status da passagem.
     }
 
-    public void exibirInformacoesPassageiro() {
+    public void exibirInformacoesPassageiro(int id) {
         System.out.println("Passageiro: " + "Nome: " + getNome() + " CPF: " + getCpf() + " e-mail: " + getEmail() + " id: : " + getId() + " idade: " + getIdade());
     }
 
