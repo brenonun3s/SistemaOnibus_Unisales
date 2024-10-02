@@ -42,7 +42,6 @@ public class Main {
         passageiro.confirmarPassagemPassageiro();
         passageiro.cancelarPassagemPassageiro("Acapulco");
         passageiro.exibirInformacoesPassageiro(2);
-
-
+        
     }
 }
