@@ -1,5 +1,5 @@
 public class Viagens {
-
+    // importar os atributos nome e id da classe UsuarioPassageiros para identificar com facilidade os passageiros da viagem
     private String numeroOnibus;
     private String origem;
     private String destino;
